@@ -11,4 +11,4 @@ The AI explores the game tree to find the move that maximizes its chances of win
 - **Alpha**: Represents the minimum score the maximizing player is assured of.
 - **Beta**: Represents the maximum score the minimizing player is assured of.
 
-When *alpha >= beta*, the algorithm "prunes" the remaining branches of the search tree, as they cannot influence the final decision.
+When *alpha >= beta*, the algorithm "prunes" the remaining branches of the search tre, as they cannot influence the final decision.

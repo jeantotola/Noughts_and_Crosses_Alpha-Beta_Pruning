@@ -5,7 +5,7 @@ import copy
 class NoughtsAndCrosses:
     """Represents the Noughts and Crosses game logic and state."""
 
-    def __init__ (self):
+    def __init__(self):
         self.EMPTY = ' '
         self.NOUGHT = 'O'
         self.CROSS = 'X'
@@ -62,7 +62,7 @@ class NoughtsAndCrosses:
 class Minimax:
     """Implementation of the Minimax algorithm with Alpha-Beta pruning."""
 
-    def next_move (self, state = NoughtsAndCrosses()):
+    def next_move(self, state = NoughtsAndCrosses()):
         """Calls the get_value() method ta calculate the best possible move for the
         current player."""
         player = state.next_player
@@ -79,7 +79,7 @@ class Minimax:
                 best_action = action
         return best_action
 
-    def get_value (self, state, player, get_min, alpha = -math.inf, beta = math.inf):
+    def get_value(self, state, player, get_min, alpha = -math.inf, beta = math.inf):
         """
         Recursive function to calculate state utility using Alpha-Beta pruning.
 
